@@ -1,6 +1,14 @@
 import random
 
-randnum = random.randint(0,100)
+opt=input("Choose Level:\nEasy(E)\nMedium(M)\nHard(H)\n")
+if (opt=="E" or opt=="e"):
+    randnum = random.randint(0,10)
+
+if (opt=="M" or opt=="m"):
+    randnum = random.randint(0,100)
+
+if (opt=="H" or opt=="h"):
+    randnum = random.randint(0,1000)
 
 while True:
 
@@ -18,11 +26,4 @@ while True:
     else:
         print("oh no ! too small guess")
 
-
-
 print("Thanks for playing.")
-
-
-
-
-
